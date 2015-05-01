@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+<title>Ethan's rummy scoring page</title>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+
+
+
+</head>
+<body>
+     <h2 id="header">Ethan's <span id="emph">great</span> rummy scoring system!</h2>
+
+    <!-- begin new player form -->
+    <form id="newPlayerForm">
+        <p>Add Player:
+            <input type="text" id="playerName" value="Joe">
+            <input type="submit" id="playerSubmit" value="Submit" /><span id="newPlayerDisplay"></span>
+
+        </p>
+    </form>
+    <!-- end new player form -->
+    <br>
+    <!-- begin begingame form-->
+    <form id="beginGame">
+        <input id="beginGameButton" type="submit" value="Begin Game" disabled />
+    </form>
+    <!-- end new player form -->
+    <p id="update">Last update: <span id="dateDisplay"></span>
+
+    </p>
+    <table id="scoreTable" class="hidden">
+        <thead id="scoreHeader"></thead>
+        <tbody id="scoreBody"></tbody>
+        <tfoot id="scoreTotals"></tfoot>
+    </table>
+    <!--additional row form-->
+    <form id="additionalRow">
+        <input id="additionalRowButton" type="submit" value="Add extra row" class="hidden">
+    </form>
+    <!--end additional row form-->
+    <p id="gameStats">	
+    </p>
+    <p id="thanks">Thanks to Lou Klepner for assistance. NOT. Heheh</p>
+
+	
+	<script type="text/javascript" src="rummy.js"></script>
+</body>
+
+</html>
