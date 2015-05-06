@@ -1,0 +1,69 @@
+* {
+    background-color: #e4f6f6;
+}
+#header {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #272626;
+}
+#emph {
+    font-style: italic;
+}
+#update {
+    color: #ea2628;
+    font-style: italic;
+    text-align: right;
+    font-size: 0.75em;
+}
+table {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+thead td {
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+}
+td {
+    background-color: white;
+    border: 1px solid #5d5d5d;
+    border-collapse: collapse;
+}
+#thanks {
+    text-align: right;
+    font-size: 0.5em;
+    vertical-align: bottom;
+}
+.hidden {
+    display: none;
+}
+#newPlayerDisplay {
+    margin-left: 7px;
+}
+#turns {
+    text-align:center;
+    font-weight: bold;
+}
+#scoreTotals {
+    text-align: center;
+    font-weight: bold;
+}
+#playerName {
+    background-color: white;
+}
+#playerSubmit {
+    background-color: white;
+}
+#beginGameButton {
+    background-color: white;
+}
+#pName {
+}
+#additionalRow {
+    margin-top: 7px;
+}
+#additionalRowButton {
+    background-color: white;
+}

@@ -74,7 +74,7 @@ function addNextRow() {
         for (var i = 0; i < playerNames.length; i++) {
             var lastScoreForPlayer = $('#player' + i + 'turn' + Number(currentTurn - 1)).val()
             newTurn.scores[i] = lastScoreForPlayer;
-            
+                
             if (newTurn.score[i] > scoreMax) {
 	            scoreMax = newTurn.score[i];
 	            playerWithMaxScore = playerNames[i];
@@ -85,7 +85,7 @@ function addNextRow() {
 		        playerWithMinScore = playerNames[i];
 		        }
 		        
-			playerTotals[i] += Number(lastScoreForPlayer);
+			playerTotals[i] += Number(lastScoreForPlayer);			
         } // close player loop
         
 		getTotals();
@@ -262,7 +262,6 @@ function gameStats() {
 		$('#gameStats').html(gameStats);
 }
 			
-						
 	/*if(numWinners > 0) {
 		previousPlayers = playerNames;
     	previousTotals = playerTotals;
@@ -271,7 +270,7 @@ function gameStats() {
 		alert(previousTotals);
 		alert(prevDispFull);
 		
-		/*$('#beginGame').removeClass('hidden' );
+		$('#beginGame').removeClass('hidden' );
 		$('#beginGameButton').prop('disabled', true);
    	 	$('#newPlayerForm').removeClass('hidden');	
     	$('#scoreTable').addClass('hidden');
