@@ -76,12 +76,12 @@ function addNextRow() {
             newTurn.scores[i] = lastScoreForPlayer;
             
             if (newTurn.scores[i] > scoreMax) {
-	            scoreMax = newTurn.score[i];
+	            scoreMax = newTurn.scores[i];
 	            playerWithMaxScore = playerNames[i];
 	            }
 	            
-	        if (newTurn.score[i] < scoreMin) {
-		        scoreMin = newTurn.score[i];
+	        if (newTurn.scores[i] < scoreMin) {
+		        scoreMin = newTurn.scores[i];
 		        playerWithMinScore = playerNames[i];
 		        }
 		        
