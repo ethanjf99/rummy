@@ -75,7 +75,7 @@ function addNextRow() {
             var lastScoreForPlayer = $('#player' + i + 'turn' + Number(currentTurn - 1)).val()
             newTurn.scores[i] = lastScoreForPlayer;
             
-            if (newTurn.score[i] > scoreMax) {
+            if (newTurn.scores[i] > scoreMax) {
 	            scoreMax = newTurn.score[i];
 	            playerWithMaxScore = playerNames[i];
 	            }
